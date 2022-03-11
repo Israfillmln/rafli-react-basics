@@ -11,8 +11,6 @@ const Navbar = () => {
           Home
         </Link>
         <Link to="/login">Login</Link>
-        <Link to="/band">Band</Link>
-        <Link to="/tour">Tour</Link>
         <Link to="/products">Products</Link>
         <Link to="/counter">counter</Link>
         {/* <a href="contact.html">Contact</a> */}
