@@ -10,11 +10,12 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           Home
         </Link>
+        <Link to="/login">Login</Link>
         <Link to="/band">Band</Link>
         <Link to="/tour">Tour</Link>
         <Link to="/products">Products</Link>
-        <Link to="/">{userSelector.username}</Link>
-        <a href="contact.html">Contact</a>
+        <Link to="/counter">counter</Link>
+        {/* <a href="contact.html">Contact</a> */}
       </div>
       <div className="search-wrapper">
         <i className="bi bi-search" />

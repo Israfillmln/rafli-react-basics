@@ -1,15 +1,23 @@
 import types from './counter/types'
+import user_types from './types/user'
 
 const initial_state = {
   id: 1,
-  username: "yuyu",
+  username: "",
+  email:"",
+  full_name:"",
+  role:""
 }
 
 const userReducer = (state = initial_state, action) => {
-  if (action.type === types.INCREMENT_COUNTER) {
+  if (action.type === user_types.LOGIN_USER) {
     return {
       ...state,
-      username: "yuyu"
+      id: 1,
+      username: action.payload.username,
+      email: action.payload.email,
+      full_name: action.payload.full_name,
+      role: action.payload.role
     }
   }
   return state
